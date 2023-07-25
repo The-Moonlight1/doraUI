@@ -1,0 +1,19 @@
+{
+  "name": "dora-ui",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm -C example dev"
+  },
+  "author": "Yan <2669526712@qq.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.64.1",
+    "typescript": "^5.1.6",
+    "vue": "^3.2.36"
+  },
+  "dependencies": {
+    "@dora-ui/components": "workspace:^",
+    "@dora-ui/theme-chalk": "workspace:^",
+    "@dora-ui/utils": "workspace:^"
+  }
+}
