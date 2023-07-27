@@ -5,7 +5,8 @@
     "dev": "pnpm -C example dev",
     "docs:dev": "pnpm -C docs dev",
     "docs:build": "pnpm -C docs build",
-    "deploy": "deploy.sh"
+    "deploy": "deploy.sh",
+    "preinstall":"node preinstall.js"
   },
   "author": "Yan <2669526712@qq.com>",
   "license": "ISC",
