@@ -1,4 +1,7 @@
-export type SFCWithInstall<T> = T & Plugin;
+/**
+ * 提供组件 以插件的方式注册组件，即 install 方法
+ */
+type SFCWithInstall<T> = T & Plugin;
 import type { App, Plugin } from 'vue'
 export const withInstall = <T, E extends Record<string, any>>(main: T, extra?: E) => {
     (main as SFCWithInstall<T>).install = (app:App): void => {
