@@ -1,7 +1,11 @@
+// 控制用户选择行为
 @mixin utils-user-select($value) {
+  // css3 新增的属性，用于控制用户是否可以选择文本内容
+  // none 禁止文本  text 允许文本  all 允许元素中的所有内容
   user-select: $value;
 }
 
+// 清除浮动
 @mixin utils-clearfix {
   $selector: &;
 

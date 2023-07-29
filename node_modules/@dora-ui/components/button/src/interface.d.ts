@@ -1,6 +1,6 @@
 /**
  * 1. 声明并导出类型
- * 2. 供props定义类型
+ * 2. 供 props 定义类型
  */
 
  import type { ButtonHTMLAttributes } from 'vue'

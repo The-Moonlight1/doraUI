@@ -2,7 +2,9 @@
 @forward 'config';
 
 /* BEM
- -------------------------- */
+ --------------------------
+为类名添加必要前缀，以便符合 BEM 规范
+*/
 
 /* 拼接命名空间 */
 @mixin b($block) {
@@ -12,7 +14,7 @@
     @content;
   }
 }
-
+// 修饰符 当传递修饰符时，会自动拼接修饰符前缀，并将样式放在根目录中，
 @mixin m($modifier) {
   $selector: &;
   $currentSelector: '';
@@ -28,6 +30,7 @@
   }
 }
 
+// 状态 当传递状态时，会自动拼接状态前缀，并将样式放在根目录中
 @mixin when($state) {
   @at-root {
     &.#{$state-prefix + $state} {

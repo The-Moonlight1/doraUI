@@ -3,10 +3,12 @@
 @use './common/var.scss' as *;
 @use './mixins/button' as *;
 
+// 给按钮添加最基本名称 dora-button,并给出默认样式
 @include b(button) {
   display: inline-block;
   margin: 0;
   font-weight: $button-font-weight;
+  // 表示行高（行间距）与字体大小相同
   line-height: 1;
   color: $button-default-font-color;
   text-align: center;
@@ -18,32 +20,36 @@
   outline: none;
   box-sizing: border-box;
   transition: 0.1s;
+  // 用于设定表单空间(如按钮、输入框等)的外观。它可以改变表单控件的默认外观，使其更加具有自定义样式
+  // none: 隐藏外观 auto: 使用默认外观 text: 使元素看起来像是一个文本输入框 inherit: 规定应该从父元素继承 appearance 属性的值 
+  // appearance: none; 用于去除浏览器默认样式 button 呈现为按钮 
   appearance: none;
   @include utils-user-select(none);
 
+  // 相邻的同级按钮之间的间距
   & + & {
     margin-left: 10px;
   }
-
+  // 设置按钮 padding 与字体大小 圆角
   @include button-size($button-padding-vertical, $button-padding-horizontal, $button-font-size, $button-border-radius);
-
+  // 设置 hover与focus 即鼠标滑过与获取焦点状态下的样式，
   &:hover,
   &:focus {
     color: $color-primary;
     background-color: $color-primary-light-9;
     border-color: $color-primary-light-7;
   }
-
+  // 鼠标左键按下时的样式、不松开
   &:active {
     color: mix($color-black, $color-primary, $button-active-shade-percent);
     border-color: mix($color-black, $color-primary, $button-active-shade-percent);
     outline: none;
   }
-
+  // 这个是用于指定 火狐 浏览器中的样式的
   &::-moz-focus-inner {
     border: 0;
   }
-
+  // 选择图标元素 ，使图标元素与文本有空隙
   & [class*='dora-icon-'] {
     & + span {
       margin-left: 5px;
@@ -51,6 +57,7 @@
   }
 
   /* size */
+  // 中等尺寸
   @include m(medium) {
     @include button-size(
       $button-medium-padding-vertical,
@@ -62,7 +69,7 @@
       padding: $button-medium-padding-vertical;
     }
   }
-
+  // small 尺寸
   @include m(small) {
     @include button-size(
       $button-small-padding-vertical,
@@ -74,7 +81,7 @@
       padding: $button-small-padding-vertical;
     }
   }
-
+  // mini 尺寸
   @include m(mini) {
     @include button-size(
       $button-mini-padding-vertical,
@@ -86,7 +93,7 @@
       padding: $button-mini-padding-vertical;
     }
   }
-
+  // tiny 尺寸
   @include m(tiny) {
     @include button-size(
       $button-tiny-padding-vertical,
