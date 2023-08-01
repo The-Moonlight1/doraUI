@@ -16,28 +16,6 @@
   },
   "author": "Yan <2669526712@qq.com>",
   "license": "ISC",
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "{!(package)*.json,*.code-snippets,.!(browserslist)*rc}": [
-      "prettier --write--parser json"
-    ],
-    "package.json": [
-      "prettier --write"
-    ],
-    "*.vue": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "*.{scss,styl,html}": [
-      "prettier --write"
-    ],
-    "*.md": [
-      "prettier --write"
-    ]
-  },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
