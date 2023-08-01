@@ -14,9 +14,7 @@
   <div class="app">
     <h2>我是开发调试页面</h2>
     <dora-button size="small" @click="handlerClick"> button </dora-button>
-    <dora-button size="small" type="primary"> 
-        
-        button </dora-button>
+    <dora-button size="small" type="primary"> button </dora-button>
     <dora-button size="small" type="success"> button </dora-button>
     <dora-button size="small" type="danger"> button </dora-button>
 
