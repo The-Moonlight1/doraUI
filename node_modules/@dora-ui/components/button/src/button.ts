@@ -1,6 +1,5 @@
-import { ExtractPropTypes, PropType } from 'vue'
-import type { ButtonNativeType, ButtonSizeType, ButtonType } from './interface'
-
+import { ExtractPropTypes, PropType } from 'vue';
+import type { ButtonNativeType, ButtonSizeType, ButtonType } from './interface';
 
 export const Props = {
   type: {
@@ -8,13 +7,13 @@ export const Props = {
     default: (): ButtonType => 'default',
     // 自定义类型校验函数
     validator(value: ButtonType) {
-      return (['default', 'primary', 'success', 'info', 'danger', 'warning'] as const).includes(value)
+      return (['default', 'primary', 'success', 'info', 'danger', 'warning'] as const).includes(value);
     }
   },
   size: {
     type: String as PropType<ButtonSizeType>,
     validator(value: ButtonSizeType) {
-      return (['default', 'medium', 'small', 'mini', 'tiny'] as const).includes(value)
+      return (['default', 'medium', 'small', 'mini', 'tiny'] as const).includes(value);
     }
   },
   plain: {
@@ -39,7 +38,7 @@ export const Props = {
   },
   icon: {
     type: String,
-    default: (): String => ""
+    default: (): String => ''
   },
   autoFocus: {
     type: Boolean,
@@ -49,13 +48,13 @@ export const Props = {
     type: String as PropType<ButtonNativeType>,
     default: (): ButtonNativeType => 'button',
     validator(value) {
-      return (['button', 'submit', 'reset'] as const).includes(value)
+      return (['button', 'submit', 'reset'] as const).includes(value);
     }
-  },
-}
+  }
+};
 
 export const Emits = {
   click: (evt: MouseEvent): MouseEvent => evt
-}
+};
 
-export type ButtonProps = ExtractPropTypes<typeof Props>
+export type ButtonProps = ExtractPropTypes<typeof Props>;

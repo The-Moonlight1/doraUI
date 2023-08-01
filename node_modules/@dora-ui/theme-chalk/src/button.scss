@@ -21,8 +21,8 @@
   box-sizing: border-box;
   transition: 0.1s;
   // 用于设定表单空间(如按钮、输入框等)的外观。它可以改变表单控件的默认外观，使其更加具有自定义样式
-  // none: 隐藏外观 auto: 使用默认外观 text: 使元素看起来像是一个文本输入框 inherit: 规定应该从父元素继承 appearance 属性的值 
-  // appearance: none; 用于去除浏览器默认样式 button 呈现为按钮 
+  // none: 隐藏外观 auto: 使用默认外观 text: 使元素看起来像是一个文本输入框 inherit: 规定应该从父元素继承 appearance 属性的值
+  // appearance: none; 用于去除浏览器默认样式 button 呈现为按钮
   appearance: none;
   @include utils-user-select(none);
 
@@ -106,7 +106,7 @@
     }
   }
 
-  /* type */ 
+  /* type */
   // 按钮表示的状态
   @include m(primary) {
     @include button-variant($button-primary-font-color, $button-primary-background-color, $button-primary-border-color);

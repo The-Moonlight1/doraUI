@@ -12,5 +12,6 @@
 </template>
 
 <script setup>
-const msg = '我是ComA组件'
+  const msg = '我是ComA组件';
 </script>
+```

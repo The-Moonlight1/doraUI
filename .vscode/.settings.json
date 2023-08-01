@@ -8,7 +8,7 @@
   "eslint.quiet": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
-    "comment":"保存时 eslint 自动修复错误",
+    "comment": "保存时 eslint 自动修复错误",
     "source.fixAll": true
   }
 }

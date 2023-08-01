@@ -6,5 +6,4 @@
 
 import DoraButton from './src/MyButton.vue';
 
-
 export { DoraButton };
