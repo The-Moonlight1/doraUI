@@ -11,9 +11,9 @@ import { Props, Emits } from './button'
 
 const props = defineProps(Props)
 const emits = defineEmits(Emits)
-
+const { type, size, round, plain, circle, disabled, nativeType, autoFocus, icon, loading } = props
 const classList = computed(() => {
-  const { type, size, round, plain, circle, disabled, nativeType, autoFocus, icon, loading } = props
+  
   return [
     {
       [`dora-button--${type}`]: type,

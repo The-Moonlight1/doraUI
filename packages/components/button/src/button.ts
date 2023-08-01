@@ -6,6 +6,7 @@ export const Props = {
   type: {
     type: String as PropType<ButtonType>,
     default: (): ButtonType => 'default',
+    // 自定义类型校验函数
     validator(value: ButtonType) {
       return (['default', 'primary', 'success', 'info', 'danger', 'warning'] as const).includes(value)
     }

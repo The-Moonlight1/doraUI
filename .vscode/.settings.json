@@ -1,0 +1,14 @@
+{
+  "eslint.validate": ["html", "vue", "javascript", "jsx", "typescript"],
+  "emmet.syntaxProfiles": {
+    "vue-html": "html",
+    "vue": "html"
+  },
+  "eslint.alwaysShowStatus": true,
+  "eslint.quiet": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "comment":"保存时 eslint 自动修复错误",
+    "source.fixAll": true
+  }
+}

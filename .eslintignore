@@ -1,0 +1,9 @@
+node_modules
+dist/
+example/
+build/
+.vscode
+.github
+.husky
+
+typings/vue-shim.d.ts
