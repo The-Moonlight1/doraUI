@@ -16,7 +16,8 @@
     <dora-button size="small" @click="handlerClick"> button </dora-button>
     <dora-button size="small" type="primary"> 
       button </dora-button>
-    <dora-button size="small" type="success"> button </dora-button>
+    <dora-button size="small" type="success"> button
+       </dora-button>
     <dora-button size="small" type="danger"> button </dora-button>
 
     <dora-button size="small" type="warning"> button </dora-button>
