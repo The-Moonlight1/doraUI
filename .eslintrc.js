@@ -15,9 +15,12 @@ module.exports = {
       env: {
         node: true
       },
-      files: ['.eslintrc.{js,cjs}'],
+      files: ['.eslintrc.{js,cjs}', '*.vue'],
       parserOptions: {
         sourceType: 'script'
+      },
+      rules: {
+        'vue/multi-word-component-names': 'off'
       }
     }
   ],

@@ -1,3 +1,6 @@
+import { AntDesignContainer, ElementPlusContainer } from '@vitepress-demo-preview/component';
+import '@vitepress-demo-preview/component/dist/style.css';
+
 import '@dora-ui/theme-chalk/src/index.scss';
 
 import Theme from 'vitepress/theme';
@@ -11,5 +14,6 @@ export default {
   enhanceApp({ app }) {
     app.use(DoraUI);
     app.component('Home', Home);
+    app.component('demo-preview', ElementPlusContainer);
   }
 };

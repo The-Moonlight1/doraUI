@@ -8,6 +8,8 @@
 
 </div>
 
+<preview path="./demo.vue" title="Avatar" description="description"></preview>
+
 ```vue
 <templete>
   <div>{{ msg }}</div>

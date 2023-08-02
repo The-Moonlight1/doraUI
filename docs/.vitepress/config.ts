@@ -1,3 +1,4 @@
+import { componentPreview, containerPreview } from '@vitepress-demo-preview/plugin';
 const sidebar = [
   {
     text: '开始',
@@ -71,6 +72,13 @@ export default defineConfig({
     footer: {
       message: '其实我也不知道写啥注脚',
       copyright: '那我就随便写个吧'
+    }
+  },
+  markdown: {
+    config(md) {
+      // md.use(demoBlockPlugin)
+      md.use(containerPreview);
+      md.use(componentPreview);
     }
   }
 });
