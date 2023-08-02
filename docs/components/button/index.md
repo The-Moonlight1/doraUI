@@ -1,16 +1,17 @@
 <div style="margin-bottom:20px;">
-    <dora-button color="blue">主要按钮</dora-button>
-    <dora-button color="green">绿色按钮</dora-button>
-    <dora-button color="gray">灰色按钮</dora-button>
-    <dora-button color="yellow">黄色按钮</dora-button>
-    <dora-button color="red">红色按钮</dora-button>
+    <dora-button> button </dora-button>
+    <dora-button type="primary"> button </dora-button>
+    <dora-button type="success"> button </dora-button>
+    <dora-button type="danger"> button </dora-button>
+    <dora-button type="warning"> button </dora-button>
+    <dora-button type="info"> button </dora-button>
+
 </div>
 
 ```vue
-<template>
+<templete>
   <div>{{ msg }}</div>
-</template>
-
+</templete>
 <script setup>
   const msg = '我是ComA组件';
 </script>
