@@ -13,36 +13,36 @@ export const Props = {
   size: {
     type: String as PropType<ButtonSizeType>,
     validator(value: ButtonSizeType) {
-      return (['default', 'medium', 'small', 'mini', 'tiny'] as const).includes(value);
+      return (['default', 'large', 'small'] as const).includes(value);
     }
   },
   plain: {
     type: Boolean,
-    default: (): Boolean => false
+    default: (): boolean => false
   },
   round: {
     type: Boolean,
-    default: (): Boolean => false
+    default: (): boolean => false
   },
   circle: {
     type: Boolean,
-    default: (): Boolean => false
+    default: (): boolean => false
   },
   loading: {
     type: Boolean,
-    default: (): Boolean => false
+    default: (): boolean => false
   },
   disabled: {
     type: Boolean,
-    default: (): Boolean => false
+    default: (): boolean => false
   },
   icon: {
     type: String,
-    default: (): String => ''
+    default: (): string => ''
   },
   autoFocus: {
     type: Boolean,
-    default: (): Boolean => false
+    default: (): boolean => false
   },
   nativeType: {
     type: String as PropType<ButtonNativeType>,

@@ -2,7 +2,9 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    node: true
+    node: true,
+    // 开启setup语法糖环境
+    'vue/setup-compiler-macros': true
   },
   extends: [
     'eslint:recommended',
@@ -20,7 +22,8 @@ module.exports = {
         sourceType: 'script'
       },
       rules: {
-        'vue/multi-word-component-names': 'off'
+        'vue/multi-word-component-names': 'off',
+        '@typescript-eslint/no-unused-vars': ['off']
       }
     }
   ],

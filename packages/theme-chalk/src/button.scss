@@ -58,15 +58,15 @@
 
   /* size */
   // 中等尺寸
-  @include m(medium) {
+  @include m(large) {
     @include button-size(
-      $button-medium-padding-vertical,
-      $button-medium-padding-horizontal,
-      $button-medium-font-size,
-      $button-medium-border-radius
+      $button-large-padding-vertical,
+      $button-large-padding-horizontal,
+      $button-large-font-size,
+      $button-large-border-radius
     );
     @include when(circle) {
-      padding: $button-medium-padding-vertical;
+      padding: $button-large-padding-vertical;
     }
   }
   // small 尺寸
@@ -79,30 +79,6 @@
     );
     @include when(circle) {
       padding: $button-small-padding-vertical;
-    }
-  }
-  // mini 尺寸
-  @include m(mini) {
-    @include button-size(
-      $button-mini-padding-vertical,
-      $button-mini-padding-horizontal,
-      $button-mini-font-size,
-      $button-mini-border-radius
-    );
-    @include when(circle) {
-      padding: $button-mini-padding-vertical;
-    }
-  }
-  // tiny 尺寸
-  @include m(tiny) {
-    @include button-size(
-      $button-tiny-padding-vertical,
-      $button-tiny-padding-horizontal,
-      $button-tiny-font-size,
-      $button-tiny-border-radius
-    );
-    @include when(circle) {
-      padding: $button-tiny-padding-vertical;
     }
   }
 

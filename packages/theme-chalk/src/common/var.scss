@@ -31,8 +31,8 @@ $color-danger: #F5222D !default;
 
 $color-primary: #4eb5ff !default;
 $color-success: #3fd482 !default;
-$color-warning: #fdea6a !default;
-$color-danger: #fa541c !default;
+$color-warning: #e6a23c !default;
+$color-danger: #f56c6c !default;
 $color-info: #8c8c8c !default;
 
 /* dark */
@@ -431,35 +431,18 @@ $tab-vertical-header-count-fill: $color-text-secondary !default;
 $button-font-size: $font-size-base !default;
 $button-font-weight: $font-weight-primary !default;
 $button-border-radius: $border-radius-base !default;
-$button-padding-vertical: 12px !default;
-$button-padding-horizontal: 20px !default;
+$button-padding-vertical: 8px !default;
+$button-padding-horizontal: 15px !default;
 
-$button-medium-font-size: $font-size-base !default;
-$button-medium-border-radius: $border-radius-base !default;
-$button-medium-padding-vertical: 10px !default;
-$button-medium-padding-horizontal: 20px !default;
+$button-large-font-size: $font-size-base !default;
+$button-large-border-radius: $border-radius-base !default;
+$button-large-padding-vertical: 12px !default;
+$button-large-padding-horizontal: 19px !default;
 
 $button-small-font-size: 12px !default;
 $button-small-border-radius: #{$border-radius-base - 1} !default;
-$button-small-padding-vertical: 9px !default;
-$button-small-padding-horizontal: 15px !default;
-
-$button-mini-font-size: 12px !default;
-$button-mini-border-radius: #{$border-radius-base - 1} !default;
-
-$button-tiny-font-size: 10px !default;
-$button-tiny-border-radius: #{$border-radius-base - 2} !default;
-
-$button-mini-padding-vertical: 7px !default;
-$button-tiny-padding-vertical: 4px !default;
-
-$button-mini-padding-horizontal: 15px !default;
-$button-tiny-padding-horizontal: 10px !default;
-
-$button-tiny-font-size: 12px !default;
-$button-tiny-border-radius: #{$border-radius-base - 1} !default;
-$button-tiny-padding-vertical: 5px !default;
-$button-tiny-padding-horizontal: 10px !default;
+$button-small-padding-vertical: 5px !default;
+$button-small-padding-horizontal: 11px !default;
 
 $button-default-font-color: $color-text-regular !default;
 $button-default-background-color: $color-white !default;

@@ -4,5 +4,5 @@ build/
 .vscode
 .github
 .husky
-
+iconfont.js
 typings/vue-shim.d.ts

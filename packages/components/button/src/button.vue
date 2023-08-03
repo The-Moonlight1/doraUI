@@ -17,6 +17,7 @@
 
   const props = defineProps(Props);
   const emits = defineEmits(Emits);
+  // eslint-disable-next-line vue/no-setup-props-destructure
   const { type, size, round, plain, circle, disabled, nativeType, autoFocus, icon, loading } = props;
   const classList = computed(() => {
     return [

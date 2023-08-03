@@ -1,14 +1,11 @@
-<div style="margin-bottom:20px;">
-    <dora-button> button </dora-button>
-    <dora-button type="primary"> button </dora-button>
-    <dora-button type="success"> button </dora-button>
-    <dora-button type="danger"> button </dora-button>
-    <dora-button type="warning"> button </dora-button>
-    <dora-button type="info"> button </dora-button>
+# Button 按钮
 
-</div>
+常用的按钮操作
 
-<preview path="./demo.vue" title="Avatar" description="description"></preview>
+## 基础用法
+
+使用 `type`、`plain`、`round`和 `circle` 来定义按钮的样式。
+<preview path="./basic.vue" title="基础用法" description="使用 type、plain、round 和 circle 来定义按钮的样式。"></preview>
 
 ```vue
 <templete>

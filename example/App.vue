@@ -1,5 +1,6 @@
 <script setup lang="ts">
   import { DoraButton } from '@dora-ui/components/button';
+  import { DoraIcon } from '@dora-ui/components/icon';
 
   // import '@dora-ui/theme-chalk/src/index.scss'
   // import DoraButton from '@dora-ui/components/button';
@@ -22,11 +23,8 @@
     <dora-button size="small" type="info"> button </dora-button>
     <br />
     <DoraButton>按钮默认尺寸</DoraButton>
-    <dora-button size="medium">按钮中等尺寸</dora-button>
 
     <dora-button size="small">按钮小尺寸</dora-button>
-    <dora-button size="mini"> 按钮极小尺寸</dora-button>
-    <dora-button size="tiny">按钮超小尺寸</dora-button>
     <br />
 
     <dora-button plain type="primary">朴素按钮</dora-button>
@@ -35,6 +33,8 @@
     <dora-button circle type="primary">圆</dora-button>
     <dora-button loading>loading</dora-button>
     <DoraButton type="success">成功</DoraButton>
+
+    <DoraIcon name="aixin" :pointer="true"></DoraIcon>
   </div>
 </template>
 
