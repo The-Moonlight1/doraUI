@@ -36,6 +36,14 @@ export const Props = {
     type: Boolean,
     default: (): boolean => false
   },
+  text: {
+    type: Boolean,
+    default: (): boolean => false
+  },
+  bg: {
+    type: Boolean,
+    default: (): boolean => false
+  },
   icon: {
     type: String,
     default: (): string => ''

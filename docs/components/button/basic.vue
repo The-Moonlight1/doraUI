@@ -8,7 +8,7 @@
     <dora-button type="danger"> Danger </dora-button>
   </div>
   <div class="item">
-    <dora-button plain> Default </dora-button>
+    <dora-button plain> plain </dora-button>
     <dora-button type="primary" plain> Primary </dora-button>
     <dora-button type="success" plain> Success </dora-button>
     <dora-button type="warning" plain> Warning </dora-button>
@@ -22,6 +22,14 @@
     <dora-button type="info" round>Info</dora-button>
     <dora-button type="warning" round>Warning</dora-button>
     <dora-button type="danger" round>Danger</dora-button>
+  </div>
+  <div class="item">
+    <dora-button icon="search" circle></dora-button>
+    <dora-button type="primary" icon="edit" circle></dora-button>
+    <dora-button type="success" icon="check" circle></dora-button>
+    <dora-button type="info" icon="youjian" circle></dora-button>
+    <dora-button type="warning" icon="star" circle></dora-button>
+    <dora-button type="danger" icon="delete" circle></dora-button>
   </div>
 </template>
 

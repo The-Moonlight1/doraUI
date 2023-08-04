@@ -7,6 +7,8 @@
     :disabled="disabled || loading"
     @click="handlerClick"
   >
+    <dora-icon v-if="icon" :name="icon"></dora-icon>
+    <dora-icon v-if="loading" name="loading" loading></dora-icon>
     <slot></slot>
   </button>
 </template>
@@ -18,7 +20,7 @@
   const props = defineProps(Props);
   const emits = defineEmits(Emits);
   // eslint-disable-next-line vue/no-setup-props-destructure
-  const { type, size, round, plain, circle, disabled, nativeType, autoFocus, icon, loading } = props;
+  const { type, size, round, plain, circle, disabled, text, bg, nativeType, autoFocus, icon, loading } = props;
   const classList = computed(() => {
     return [
       {
@@ -28,7 +30,9 @@
         [`is-loading`]: loading,
         [`is-round`]: round,
         [`is-plain`]: plain,
-        [`is-circle`]: circle
+        [`is-circle`]: circle,
+        [`is-text`]: text,
+        [`is-bg`]: bg
       }
     ];
   });

@@ -70,6 +70,32 @@
   &.is-plain {
     @include button-plain($background-color);
   }
+
+  &.is-text {
+    color: $background-color;
+    background-color: transparent;
+    border-color: transparent;
+
+    &:hover,
+    &:focus {
+      background-color: $color-info-light;
+    }
+
+    &.is-bg {
+      background-color: $color-info-light;
+    }
+
+    &.is-disabled {
+      &,
+      &:hover,
+      &:focus,
+      &:active {
+        color: mix($color-white, $background-color, 40%);
+        background-color: transparent;
+        border-color: transparent;
+      }
+    }
+  }
 }
 
 @mixin button-size($padding-vertical, $padding-horizontal, $font-size, $border-radius) {

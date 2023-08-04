@@ -14,6 +14,14 @@ export const Props = {
   pointer: {
     type: Boolean,
     default: (): boolean => false
+  },
+  spin: {
+    type: Boolean,
+    default: (): boolean => false
+  },
+  loading: {
+    type: Boolean,
+    default: (): boolean => false
   }
 };
 

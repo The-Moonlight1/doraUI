@@ -34,7 +34,7 @@
     <dora-button loading>loading</dora-button>
     <DoraButton type="success">成功</DoraButton>
 
-    <DoraIcon name="aixin" :pointer="true"></DoraIcon>
+    <DoraIcon name="aixin" :pointer="true" :spin="true"></DoraIcon>
   </div>
 </template>
 

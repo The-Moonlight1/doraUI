@@ -1,0 +1,7 @@
+@use './mixins/mixins.scss' as *;
+@use './mixins/utils.scss' as *;
+@use './common/var.scss' as *;
+
+@include b(icon) {
+  display: inline-block;
+}

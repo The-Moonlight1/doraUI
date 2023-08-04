@@ -50,35 +50,9 @@
     border: 0;
   }
   // 选择图标元素 ，使图标元素与文本有空隙
-  & [class*='dora-icon-'] {
+  & [class*='dora-icon'] {
     & + span {
       margin-left: 5px;
-    }
-  }
-
-  /* size */
-  // 中等尺寸
-  @include m(large) {
-    @include button-size(
-      $button-large-padding-vertical,
-      $button-large-padding-horizontal,
-      $button-large-font-size,
-      $button-large-border-radius
-    );
-    @include when(circle) {
-      padding: $button-large-padding-vertical;
-    }
-  }
-  // small 尺寸
-  @include m(small) {
-    @include button-size(
-      $button-small-padding-vertical,
-      $button-small-padding-horizontal,
-      $button-small-font-size,
-      $button-small-border-radius
-    );
-    @include when(circle) {
-      padding: $button-small-padding-vertical;
     }
   }
 
@@ -126,25 +100,15 @@
     &,
     &:hover,
     &:focus {
-      color: $button-disabled-font-color;
+      // color: $button-disabled-font-color;
       cursor: not-allowed;
-      background-color: $button-disabled-background-color;
+      // background-color: $button-disabled-background-color;
       background-image: none;
-      border-color: $button-disabled-border-color;
+      // border-color: $button-disabled-border-color;
     }
 
     &.el-button--text {
       background-color: transparent;
-    }
-
-    &.is-plain {
-      &,
-      &:hover,
-      &:focus {
-        color: $button-disabled-font-color;
-        background-color: $color-white;
-        border-color: $button-disabled-border-color;
-      }
     }
   }
   // 按钮状态为 loading 时的样式
@@ -165,11 +129,46 @@
     }
   }
   @include when(round) {
-    padding: 12px 23px;
     border-radius: 20px;
   }
   @include when(circle) {
     padding: $button-padding-vertical;
     border-radius: 50%;
+  }
+  @include when(text) {
+    border: 0 solid transparent;
+    background-color: transparent;
+    &:active {
+      color: mix($color-black, $color-primary, $button-active-shade-percent);
+      background-color: transparent;
+      border-color: transparent;
+      outline: none;
+    }
+  }
+
+  /* size */
+  // 中等尺寸
+  @include m(large) {
+    @include button-size(
+      $button-large-padding-vertical,
+      $button-large-padding-horizontal,
+      $button-large-font-size,
+      $button-large-border-radius
+    );
+    @include when(circle) {
+      padding: $button-large-padding-vertical;
+    }
+  }
+  // small 尺寸
+  @include m(small) {
+    @include button-size(
+      $button-small-padding-vertical,
+      $button-small-padding-horizontal,
+      $button-small-font-size,
+      $button-small-border-radius
+    );
+    @include when(circle) {
+      padding: $button-small-padding-vertical;
+    }
   }
 }
