@@ -76,7 +76,6 @@ export default defineConfig({
   },
   markdown: {
     config(md) {
-      // md.use(demoBlockPlugin)
       md.use(containerPreview);
       md.use(componentPreview);
     }

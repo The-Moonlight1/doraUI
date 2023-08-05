@@ -1,6 +1,6 @@
 import {
   Transition,
-  computed,
+  computed$1,
   createApp,
   createBaseVNode,
   createBlock,
@@ -18,9 +18,9 @@ import {
   unref,
   watch,
   withCtx
-} from './chunk-TXYMQ3BO.js';
+} from './chunk-XWDOAUXK.js';
 
-// ../node_modules/.pnpm/@vitepress-demo-preview+component@2.3.2_vitepress@1.0.0-beta.6_vue@3.3.4/node_modules/@vitepress-demo-preview/component/dist/preview-component.js
+// ../node_modules/.pnpm/@vitepress-demo-preview+component@2.3.2_vitepress@1.0.0-beta.7_vue@3.3.4/node_modules/@vitepress-demo-preview/component/dist/preview-component.js
 var Z = (t, n) => {
   const e = t.__vccOpts || t;
   for (const [c, l] of n) e[c] = l;
@@ -261,7 +261,7 @@ var fe = defineComponent({
       L = () => {
         h(m.value), E.open();
       },
-      g = computed(() => {
+      g = computed$1(() => {
         var u;
         return d.value ? ((u = d.value) == null ? void 0 : u.clientHeight) : 0;
       }),
@@ -409,7 +409,7 @@ var ye = defineComponent({
       d = () => {
         v(h.value), E.open();
       },
-      L = computed(() => {
+      L = computed$1(() => {
         var s;
         return C.value ? ((s = C.value) == null ? void 0 : s.clientHeight) : 0;
       }),
@@ -527,7 +527,7 @@ var He = defineComponent({
       d = () => {
         v(h.value), E.open();
       },
-      L = computed(() => {
+      L = computed$1(() => {
         var s;
         return C.value ? ((s = C.value) == null ? void 0 : s.clientHeight) : 0;
       }),

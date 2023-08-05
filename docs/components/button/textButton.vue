@@ -21,7 +21,7 @@
 
 <script setup lang="ts">
   const buttons = [
-    { type: '', text: 'plain' },
+    { type: 'default', text: 'plain' },
     { type: 'primary', text: 'primary' },
     { type: 'success', text: 'success' },
     { type: 'info', text: 'info' },

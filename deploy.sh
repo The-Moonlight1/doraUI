@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-# 忽略错误
+# 确保脚本抛出遇到的错误
 set -e
 
 # 构建
@@ -13,7 +13,7 @@ cd docs/.vitepress/dist
 # echo 'www.example.com' > CNAME
 
 git init
-git add -A
+git add .
 git commit -m 'deploy'
 
 # 如果部署到 https://<USERNAME>.github.io
@@ -21,6 +21,3 @@ git commit -m 'deploy'
 
 # 如果是部署到 https://<USERNAME>.github.io/<REPO>
 git push -f git@github.com:The-Moonlight1/doraUI.git master:gh-pages
-
-cd -
-
