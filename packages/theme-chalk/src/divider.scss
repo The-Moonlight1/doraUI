@@ -1,0 +1,68 @@
+@use './mixins/mixins.scss' as *;
+@use './mixins/utils.scss' as *;
+@use './common/var.scss' as *;
+
+@include b(divider) {
+  display: flex;
+  align-items: center;
+  font-size: $divider-font-size;
+  position: relative;
+  & span {
+    flex: 1 0 auto;
+  }
+  &::before {
+    content: '';
+    width: 50%;
+    border-width: 2px 0 0;
+    border-style: solid;
+    border-color: $divider-color;
+    transform: translateY(50%);
+  }
+
+  &::after {
+    content: '';
+    width: 50%;
+    border-width: 2px 0 0;
+    border-style: solid;
+    border-color: $divider-color;
+    transform: translateY(50%);
+  }
+  @include m(left) {
+    &::before {
+      width: 5%;
+    }
+    &::after {
+      width: 95%;
+    }
+  }
+
+  @include m(right) {
+    &::before {
+      width: 95%;
+    }
+
+    &::after {
+      width: 5%;
+    }
+  }
+
+  @include when('dashed') {
+    &::before {
+      border-style: dashed;
+    }
+    &::after {
+      border-style: dashed;
+    }
+  }
+
+  @include when('vertical') {
+    position: relative;
+    top: -0.06em;
+    display: inline-block;
+    height: 0.9em;
+    margin: 0 8px;
+    vertical-align: middle;
+    border-top: 0;
+    border-inline-start: 2px solid rgba(5, 5, 5, 0.06);
+  }
+}

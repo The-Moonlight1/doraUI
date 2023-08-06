@@ -57,7 +57,24 @@
     <DoraIcon name="aixin" :pointer="true" :spin="true"></DoraIcon>
 
     <DoraTable :columns="tableData.columns" :data="tableData.data"></DoraTable>
+    <div class="box">
+      哈哈哈
+      <dora-divider></dora-divider>
+      <dora-divider>我是分割线</dora-divider>
+      <dora-divider fontAlign="left">左侧分割线</dora-divider>
+      <dora-divider fontAlign="right">右侧分割线</dora-divider>
+      <dora-divider type="dashed">dashed</dora-divider>
+      <dora-divider fontAlign="left" type="dashed">dashed 左</dora-divider>
+
+      <span>Text <dora-divider orientation="vertical"></dora-divider> Link </span>
+    </div>
   </div>
 </template>
 
-<style lang="less" scoped></style>
+<style lang="scss" scoped>
+  .box {
+    width: 400px;
+    height: 200px;
+    border: 2px salmon solid;
+  }
+</style>

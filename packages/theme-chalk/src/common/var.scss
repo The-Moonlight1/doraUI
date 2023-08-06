@@ -848,3 +848,10 @@ $breakpoints-spec: (
     min-width: $xl
   )
 );
+
+/* divider */
+
+$divider-color: $border-color-base !default;
+$divider-font-size: $font-size-medium !default;
+$divider-line-height: 1.5 !default;
+$divider-text-padding: 8px !default;
