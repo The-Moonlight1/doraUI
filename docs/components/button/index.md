@@ -50,14 +50,14 @@
 
 ### Button Attributres
 
-| 属性名    |           说明           |      类型 | 默认值 |
-| --------- | :----------------------: | --------: | ------ |
-| size      |           尺寸           |    `emum` | ——     |
-| type      |           类型           |    `enum` | ——     |
-| plain     |      是否为朴素按钮      | `boolean` | false  |
+| 属性名    | 描述                     | 类型      | 默认值 |
+| --------- | ------------------------ | --------- | ------ |
+| size      | 尺寸                     | `emum`    | ——     |
+| type      | 类型                     | `enum`    | ——     |
+| plain     | 是否为朴素按钮           | `boolean` | false  |
 | bg        | 是否显示文字按钮背景颜色 | `boolean` | false  |
-| round     |      是否为圆角按钮      | `boolean` | false  |
-| circle    |      是否为圆形按钮      | `boolean` | false  |
-| loading   |     是否为加载中状态     | `boolean` | false  |
-| disabled  |    按钮是否为禁用状态    | `boolean` | false  |
-| autofocus |   原生 autofocus 属性    | `boolean` | false  |
+| round     | 是否为圆角按钮           | `boolean` | false  |
+| circle    | 是否为圆形按钮           | `boolean` | false  |
+| loading   | 是否为加载中状态         | `boolean` | false  |
+| disabled  | 按钮是否为禁用状态       | `boolean` | false  |
+| autofocus | 原生 autofocus 属性      | `boolean` | false  |

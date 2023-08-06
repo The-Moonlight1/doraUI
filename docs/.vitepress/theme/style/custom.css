@@ -1,0 +1,61 @@
+/* 清除表格样式 */
+  .vp-doc table {
+    display: table;
+    margin: 0;
+    margin-top: 8px;
+    overflow: auto;
+    width: 100%;
+    border: 1px solid #8c8c8c;
+    border-spacing: 0;
+    border-radius: 8px;
+    text-align: left;
+    transition: all 0.3s;
+    font-size: 14px;
+    border-collapse: unset;
+}
+  
+  .vp-doc tr {
+    border-top: 0;
+    transition: background-color 0.5s;
+  }
+  
+  .vp-doc tr:nth-child(2n) {
+    background-color: #ffffff;
+  }
+
+  .vp-doc tr:hover { 
+    background-color: #f6f6f8;
+  }
+  .vp-doc th {
+    border: 0;
+    padding: 0;
+    padding-left: 8px;
+    font-weight: 600;
+    text-align: left;
+    background-color: #f6f6f8;
+    line-height: 44px;
+    color: #000;
+  }
+  
+  .vp-doc td {
+    border: 0;
+    padding: 10px 8px;
+    max-width: 240px;
+    border-top: 1px solid #a3a3a3;
+    text-align: left;
+    transition: border;
+}
+
+mark {
+  display: inline-block;
+  background-color: aquamarine;
+  border-radius: 8px;
+  height: 30px;
+  line-height: 30px;
+}
+
+
+.vp-doc :not(pre) > code {
+    color: #1fbbc3;
+}
+    

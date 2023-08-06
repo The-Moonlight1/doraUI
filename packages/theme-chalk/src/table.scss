@@ -1,0 +1,36 @@
+@use './mixins/mixins.scss' as *;
+@use './mixins/utils.scss' as *;
+@use './common/var.scss' as *;
+
+@include b(table) {
+  margin-top: $space-m;
+  overflow: hidden;
+  width: 100%;
+  // min-width: 800px;
+  border: 1px solid $color-info;
+  border-spacing: 0;
+  border-radius: $border-radius-large;
+  text-align: left;
+  transition: all 0.3s;
+  font-size: $font-size-base;
+  tr:hover {
+    background-color: #f6f6f8;
+  }
+  th {
+    padding-left: $space-m;
+    font-weight: 600;
+    text-align: left;
+    background-color: #f6f6f8;
+    line-height: 44px;
+  }
+  td {
+    padding: 10px $space-m;
+    max-width: 240px;
+    border-top: 1px solid mix($color-white, $color-info, 20%);
+    text-align: left;
+    transition: border;
+    @include when(doraType) {
+      color: #1fbbc3;
+    }
+  }
+}

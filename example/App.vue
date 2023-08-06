@@ -9,6 +9,26 @@
     console.log('click');
   };
   console.log('test');
+  const tableData = {
+    columns: ['name', 'age', 'address'],
+    data: [
+      {
+        name: '张三',
+        age: 18,
+        address: '北京'
+      },
+      {
+        name: '李四',
+        age: 20,
+        address: '上海'
+      },
+      {
+        name: '王五',
+        age: 22,
+        address: '广州'
+      }
+    ]
+  };
 </script>
 
 <template>
@@ -35,6 +55,8 @@
     <DoraButton type="success">成功</DoraButton>
 
     <DoraIcon name="aixin" :pointer="true" :spin="true"></DoraIcon>
+
+    <DoraTable :columns="tableData.columns" :data="tableData.data"></DoraTable>
   </div>
 </template>
 
