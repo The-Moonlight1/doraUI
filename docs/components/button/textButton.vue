@@ -1,18 +1,18 @@
 <template>
   <p>Basic text button</p>
-  <div class="item">
+  <div class="button-item">
     <dora-button v-for="button in buttons" :key="button.text" :type="button.type" text>{{ button.text }}</dora-button>
   </div>
 
   <p>Background color always on</p>
-  <div class="item">
+  <div class="button-item">
     <dora-button v-for="button in buttons" :key="button.text" :type="button.type" text bg>{{
       button.text
     }}</dora-button>
   </div>
 
   <p>Disabled text button</p>
-  <div class="item">
+  <div class="button-item">
     <dora-button v-for="button in buttons" :key="button.text" :type="button.type" text disabled>{{
       button.text
     }}</dora-button>

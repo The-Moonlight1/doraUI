@@ -1,5 +1,5 @@
 <template>
-  <div class="item">
+  <div class="button-item">
     <dora-button disabled>Default</dora-button>
     <dora-button type="primary" disabled>Primary</dora-button>
     <dora-button type="success" disabled>Success</dora-button>
@@ -8,7 +8,7 @@
     <dora-button type="danger" disabled>Danger</dora-button>
   </div>
 
-  <div class="item">
+  <div class="button-item">
     <dora-button plain disabled>Plain</dora-button>
     <dora-button type="primary" plain disabled>Primary</dora-button>
     <dora-button type="success" plain disabled>Success</dora-button>
@@ -19,7 +19,7 @@
 </template>
 
 <style lang="scss">
-  .item {
+  .button-item {
     margin-bottom: 20px;
   }
 </style>
