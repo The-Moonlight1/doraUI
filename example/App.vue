@@ -1,10 +1,4 @@
 <script setup lang="ts">
-  import { DoraButton } from '@dora-ui/components/button';
-  import { DoraIcon } from '@dora-ui/components/icon';
-
-  // import '@dora-ui/theme-chalk/src/index.scss'
-  // import DoraButton from '@dora-ui/components/button';
-
   const handlerClick = () => {
     console.log('click');
   };
