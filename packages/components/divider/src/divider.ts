@@ -1,5 +1,5 @@
 import { DividerOrientation, DividerFontAlign, DividerFontType, DividerType } from './interface';
-import { PropType } from 'vue';
+import { ExtractPropTypes, PropType } from 'vue';
 
 export const Props = {
   orientation: {
@@ -34,3 +34,5 @@ export const Props = {
     type: String
   }
 };
+
+export type DividerProps = ExtractPropTypes<typeof Props>;
