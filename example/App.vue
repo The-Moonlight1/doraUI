@@ -62,6 +62,11 @@
 
       <span>Text <dora-divider orientation="vertical"></dora-divider> Link </span>
     </div>
+    <dora-space size="larger">
+      <dora-button>按钮1</dora-button>
+      <span>2</span>
+      666
+    </dora-space>
   </div>
 </template>
 
