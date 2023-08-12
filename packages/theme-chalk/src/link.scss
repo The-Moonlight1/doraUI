@@ -1,0 +1,66 @@
+@use './mixins/mixins.scss' as *;
+@use './mixins/utils.scss' as *;
+@use './common/var.scss' as *;
+@use './mixins/link' as *;
+
+@include b(link) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #000;
+  box-sizing: border-box;
+  padding: 4px;
+  transition: 0.1s;
+  appearance: none;
+  border-bottom: 1px solid transparent;
+  @include utils-user-select(none);
+  // 相邻的同级按钮之间的间距
+  & + & {
+    margin-left: 10px;
+  }
+  &:hover {
+    border-color: $color-primary;
+  }
+  @include m(primary) {
+    @include link-variant($color-primary);
+    &:hover {
+      border-color: $color-primary;
+    }
+  }
+  @include m(success) {
+    @include link-variant($color-success);
+    &:hover {
+      border-color: $color-success;
+    }
+  }
+  @include m(warning) {
+    @include link-variant($color-warning);
+    &:hover {
+      border-color: $color-warning;
+    }
+  }
+  @include m(danger) {
+    @include link-variant($color-danger);
+    &:hover {
+      border-color: $color-danger;
+    }
+  }
+  @include m(info) {
+    @include link-variant($color-info);
+    &:hover {
+      border-color: $color-info;
+    }
+  }
+
+  @include when(disabled) {
+    &,
+    &:hover,
+    &:focus {
+      cursor: not-allowed;
+    }
+  }
+  @include when(underline) {
+    border: 0;
+  }
+}

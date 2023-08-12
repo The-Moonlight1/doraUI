@@ -1,0 +1,25 @@
+@use '../common/var' as *;
+@mixin link-variant($color) {
+  color: $color;
+  &,
+  &:hover,
+  &:focus {
+    color: $color;
+  }
+
+  &:active {
+    color: $color;
+  }
+
+  &.is-active {
+    color: $color;
+  }
+  &.is-disabled {
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      color: mix($color-white, $color, 40%);
+    }
+  }
+}

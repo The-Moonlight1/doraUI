@@ -68,6 +68,8 @@
       666
     </dora-space>
   </div>
+
+  <dora-link href="https://www.baidu.com" type="primary" disabled>百度</dora-link>
 </template>
 
 <style lang="scss" scoped>
