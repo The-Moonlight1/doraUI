@@ -17,5 +17,3 @@
     ><span><slot></slot></span>
   </a>
 </template>
-
-<style lang="scss" scoped></style>
