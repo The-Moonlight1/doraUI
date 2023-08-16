@@ -26,7 +26,10 @@ const sidebar = [
   },
   {
     text: '表单组件',
-    items: [{ text: 'Input 输入框', link: '/components/input/' }]
+    items: [
+      { text: 'Input 输入框', link: '/components/input/' },
+      { text: 'DataPicker 日期选择器', link: '/components/datapicker/' }
+    ]
   },
   {
     text: '数据展示',
