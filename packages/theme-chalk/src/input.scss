@@ -1,0 +1,55 @@
+@use './mixins/mixins.scss' as *;
+@use './mixins/utils.scss' as *;
+@use './common/var.scss' as *;
+
+@include b(input) {
+  outline: none;
+  border: 0;
+  width: 100%;
+  height: $input-height;
+  line-height: $input-height;
+  box-sizing: border-box;
+  // max-width: $input-max-width;
+  &__wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    display: inline-flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    font-size: $input-font-size;
+    color: $input-font-color;
+    border: $input-border;
+    border-radius: $input-border-radius;
+    &:hover {
+      border-color: $input-hover-border;
+    }
+    @include when(focus) {
+      border-color: $input-focus-border;
+    }
+    @include when(disabled) {
+      color: $input-disabled-color;
+      border-color: $input-disabled-border;
+      background-color: #f5f7fa;
+    }
+  }
+  &.is-disabled {
+    cursor: not-allowed;
+    color: $input-disabled-color;
+    border-color: $input-disabled-border;
+    background-color: #f5f7fa;
+  }
+  &__suffix,
+  &__prefix {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 11px;
+    font-size: 20px;
+  }
+
+  &__prefix {
+    padding-left: 0;
+    padding-right: 11px;
+  }
+}

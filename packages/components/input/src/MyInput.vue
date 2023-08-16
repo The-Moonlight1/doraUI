@@ -44,39 +44,37 @@
 </script>
 
 <template>
-  <div class="dora-input">
-    <div
-      :class="['dora-input__wrapper', focus && 'is-focus']"
-      @mouseenter="handleMouseEnter"
-      @mouseleave="handleMouseLeave"
-    >
-      <span v-if="$slots.prefix || prefixIcon" class="dora-input__prefix">
-        <slot name="prefix"></slot>
-        <dora-icon v-if="prefixIcon" :name="prefixIcon" />
-      </span>
-      <input
-        ref="inputRef"
-        v-model="value"
-        class="dora-input__inner"
-        :type="cType"
-        :placeholder="placeholder"
-        :autofocus="autofocus"
-        :readonly="readonly"
-        :disabled="disabled"
-        @focus="onFocus"
-        @blur="onBlur"
-        v-bind="$attrs"
-      />
-      <span v-if="showPassword || clearable" class="dora-input__suffix">
-        <template v-if="showPassword">
-          <dora-icon :name="passwordView ? 'view' : 'hide'" @click="handleViewPassword"></dora-icon>
-        </template>
-        <dora-icon v-show="showClear" name="circle-close" @click.stop="clear"></dora-icon>
-      </span>
-      <span v-if="$slots.suffix || suffixIcon" class="dora-input__suffix">
-        <slot name="suffix"></slot>
-        <dora-icon v-if="suffixIcon" :name="suffixIcon"></dora-icon>
-      </span>
-    </div>
+  <div
+    :class="['dora-input__wrapper', focus && 'is-focus', disabled && 'is-disabled']"
+    @mouseenter="handleMouseEnter"
+    @mouseleave="handleMouseLeave"
+  >
+    <span v-if="$slots.prefix || prefixIcon" class="dora-input__prefix">
+      <slot name="prefix"></slot>
+      <dora-icon v-if="prefixIcon" :name="prefixIcon" />
+    </span>
+    <input
+      ref="inputRef"
+      v-model="value"
+      :class="['dora-input', disabled && 'is-disabled', size && 'dora-input--' + size]"
+      :type="cType"
+      :placeholder="placeholder"
+      :autofocus="autofocus"
+      :readonly="readonly"
+      :disabled="disabled"
+      @focus="onFocus"
+      @blur="onBlur"
+      v-bind="$attrs"
+    />
+    <span v-if="showPassword || clearable" class="dora-input__suffix">
+      <template v-if="showPassword">
+        <dora-icon :name="passwordView ? 'view' : 'hide'" @click="handleViewPassword"></dora-icon>
+      </template>
+      <dora-icon v-show="showClear" name="quxiao" @click.stop="clear"></dora-icon>
+    </span>
+    <span v-if="$slots.suffix || suffixIcon" class="dora-input__suffix">
+      <slot name="suffix"></slot>
+      <dora-icon v-if="suffixIcon" :name="suffixIcon"></dora-icon>
+    </span>
   </div>
 </template>

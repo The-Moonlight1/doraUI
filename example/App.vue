@@ -70,7 +70,7 @@
   </div>
 
   <dora-link href="https://www.baidu.com" type="primary" disabled>百度</dora-link>
-  <dora-input suffixIcon="aixin" prefixIcon="aixin"></dora-input>
+  <dora-input suffixIcon="aixin" clearable="true"></dora-input>
 </template>
 
 <style lang="scss" scoped>
