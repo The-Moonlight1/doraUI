@@ -1,4 +1,6 @@
 <script setup lang="ts">
+  import DoraTooltip from '@dora-ui/components/tooltip';
+
   const handlerClick = () => {
     console.log('click');
   };
@@ -71,6 +73,7 @@
 
   <dora-link href="https://www.baidu.com" type="primary" disabled>百度</dora-link>
   <dora-input suffixIcon="aixin" clearable="true"></dora-input>
+  <DoraTooltip title="test">123</DoraTooltip>
 </template>
 
 <style lang="scss" scoped>
