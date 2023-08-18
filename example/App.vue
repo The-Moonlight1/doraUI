@@ -1,4 +1,5 @@
 <script setup lang="ts">
+  import DoraPopper from '@dora-ui/components/popper';
   import DoraTooltip from '@dora-ui/components/tooltip';
 
   const handlerClick = () => {

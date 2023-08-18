@@ -116,6 +116,7 @@
 
 {
   "compilerOptions": {
+    "jsx": "react",
     "module": "ESNext",
     "declaration": false,
     "noImplicitAny": false,

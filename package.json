@@ -41,6 +41,7 @@
   "dependencies": {
     "@dora-ui/components": "workspace:^",
     "@dora-ui/theme-chalk": "workspace:^",
-    "@dora-ui/utils": "workspace:^"
+    "@dora-ui/utils": "workspace:^",
+    "@floating-ui/dom": "^1.5.1"
   }
 }
