@@ -77,8 +77,7 @@
     <span>测试</span>
     <template #content> 我是测试tooltip </template>
   </DoraTooltip>
-  <DoraDropdown placement="leftBottom">
-    <DoraButton type="sceondary">hover</DoraButton>
+  <DoraDropdown placement="right" title="test">
     <template #content>
       <dora-dropdown-item>Action 1</dora-dropdown-item>
       <dora-dropdown-item>Action 2</dora-dropdown-item>
