@@ -54,33 +54,10 @@
     left: 50%;
     translate: -50% calc(-100% - $arrowSize);
   }
-  &__content--topLeft {
-    top: 0;
-    left: 0;
-    translate: 0 calc(-100% - $arrowSize);
-  }
-  &__content--topRight {
-    top: 0;
-    right: 0;
-    translate: 0 calc(-100% - $arrowSize);
-  }
-
   &__content--bottom {
     bottom: 0;
     left: 50%;
     translate: -50% calc(100% + $arrowSize);
-  }
-
-  &__content--bottomLeft {
-    bottom: 0;
-    left: 0;
-    translate: 0 calc(100% + $arrowSize);
-  }
-
-  &__content--bottomRight {
-    right: 0;
-    bottom: 0;
-    translate: 0 calc(100% + $arrowSize);
   }
 
   &__content--right {

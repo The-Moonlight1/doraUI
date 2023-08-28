@@ -73,7 +73,20 @@
 
   <dora-link href="https://www.baidu.com" type="primary" disabled>百度</dora-link>
   <dora-input suffixIcon="aixin" clearable="true"></dora-input>
-  <DoraTooltip title="test">123</DoraTooltip>
+  <DoraTooltip>
+    <span>测试</span>
+    <template #content> 我是测试tooltip </template>
+  </DoraTooltip>
+  <DoraDropdown placement="leftBottom">
+    <DoraButton type="sceondary">hover</DoraButton>
+    <template #content>
+      <dora-dropdown-item>Action 1</dora-dropdown-item>
+      <dora-dropdown-item>Action 2</dora-dropdown-item>
+      <dora-dropdown-item>Action 3</dora-dropdown-item>
+      <dora-dropdown-item>Action 4</dora-dropdown-item>
+      <dora-dropdown-item>Action 5</dora-dropdown-item>
+    </template>
+  </DoraDropdown>
 </template>
 
 <style lang="scss" scoped>

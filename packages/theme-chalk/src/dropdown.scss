@@ -1,0 +1,93 @@
+@use './mixins/mixins.scss' as *;
+@use './mixins/utils.scss' as *;
+@use './common/var.scss' as *;
+
+.dora-dropdown {
+  .dora-tooltip {
+    --tooltip-theme-bg-color: $bg-color-l;
+    --tooltip-theme-font-color: $font-color-l;
+    &__content--left {
+      top: 50%;
+      left: 0;
+      translate: -100% -50%;
+    }
+    &__content--leftTop {
+      top: 0;
+      left: 0;
+      translate: 0 -100%;
+    }
+    &__content--leftBottom {
+      bottom: 0;
+      left: 0;
+      translate: 0 100%;
+    }
+    &__content--top {
+      top: 0;
+      left: 50%;
+      translate: -50% -100%;
+    }
+    &__content--bottom {
+      bottom: 0;
+      left: 50%;
+      translate: -50% 100%;
+    }
+
+    &__content--right {
+      top: 50%;
+      right: 0;
+      translate: 100% -50%;
+    }
+
+    &__content--rightTop {
+      top: 0;
+      right: 0;
+      translate: 0 -100%;
+    }
+    &__content--rightBottom {
+      right: 0;
+      bottom: 0;
+      translate: 0 100%;
+    }
+  }
+  .dora-tooltip__content {
+    padding: $space-s;
+    min-width: auto;
+    max-width: none;
+    min-height: auto;
+    max-height: none;
+    border-radius: $border-radius-base;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #fff;
+  }
+}
+
+.dora-dropdown__icon {
+  display: inline-block;
+  margin-left: 6px;
+  transition: transform 0.2s ease;
+}
+
+.dora-dropdown-item {
+  padding: 0 12px;
+  line-height: 32px;
+  border-radius: $border-radius-base;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $dropdown-menuItem-hover-color;
+  }
+
+  &.size-s {
+    font-size: 9px;
+    line-height: 24px;
+  }
+
+  &.size-m {
+    line-height: 28px;
+  }
+
+  &.size-xl {
+    font-size: 16px;
+    line-height: 38px;
+  }
+}

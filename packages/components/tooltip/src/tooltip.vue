@@ -18,8 +18,8 @@
           @mouseenter="openTooltip"
           @mouseleave="onLeave"
         >
-          <div v-if="arrow" :class="bem('arrow')"></div>
-          <slot name="content">{{ title }}</slot>
+          <!-- <div v-if="arrow" :class="bem('arrow')"></div> -->
+          <slot name="content"></slot>
         </div>
       </template>
     </transition>

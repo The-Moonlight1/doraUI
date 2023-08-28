@@ -45,7 +45,7 @@ const createModifier = (prefixClass: string, modifierObject?: BEMModifier) => {
  * bem('main',[type, status, shape, size], {loading: loading,long: long,disabled: disabled}),
  */
 
-export const createCssScope = (prefix: string, identity = 'yk') => {
+export const createCssScope = (prefix: string, identity = 'dora') => {
   const prefixClass = `${identity}-${prefix.replace(identity, '')}`;
 
   return (elementOrModifier?: BEMElement | BEMModifier, modifier?: BEMModifier, modifierLater?: BEMModifier) => {

@@ -1,26 +1,62 @@
-import { DropdownPosition, DropdownTriger } from './interface';
-import { PropType, ExtractPropTypes } from 'vue';
+import { PropType } from 'vue';
+import { Placement, Trigger } from '../../tooltip/src/tooltip';
+import { Size, Type } from './interface';
 
-export const Props = {
+export const DropdownProps = {
+  title: {
+    type: String,
+    default: ''
+  },
+  placement: {
+    type: String as () => Placement,
+    default: 'bottom',
+    validator: (val: Placement) => {
+      return (['top', 'left', 'right', 'bottom', 'leftTop', 'leftBottom', 'rightTop', 'rightBottom'] as const).includes(
+        val
+      );
+    }
+  },
   trigger: {
-    type: String as PropType<DropdownTriger>,
-    default: 'hover'
+    type: String,
+    default: 'hover',
+    validator: (val: Trigger) => {
+      return (['hover', 'focus', 'click', 'contextMenu', 'none'] as const).includes(val);
+    }
   },
-  position: {
-    type: String as PropType<DropdownPosition>,
-    default: 'bottom'
+  closeDelay: {
+    type: Number,
+    default: 80
   },
-  disabled: {
+  openDelay: {
+    type: Number,
+    default: 80
+  },
+  open: {
     type: Boolean,
     default: false
   },
-  visible: {
-    type: Boolean,
-    default: false
+  type: {
+    type: String as PropType<Type>,
+    default: 'default'
   },
-  showArrow: {
+  size: {
+    type: String as PropType<Size>,
+    default: 'm'
+  },
+  overlayStyle: {
+    type: Object,
+    default: () => {}
+  },
+  overlayClassName: {
+    type: String,
+    default: ''
+  },
+  zIndex: {
+    type: Number,
+    default: 1000
+  },
+  arrow: {
     type: Boolean,
     default: true
   }
 };
-export type DropdownPropps = ExtractPropTypes<typeof Props>;
