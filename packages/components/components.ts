@@ -9,4 +9,3 @@ export { DoraCascader } from './cascader';
 export { DoraInput } from './input';
 export { DoraDataPicker } from './datapicker';
 export { DoraTooltip } from './tooltip';
-export { DoraPopper } from './popper';

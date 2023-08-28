@@ -1,6 +1,6 @@
 // import { StyleValue } from 'vue';
 
-import { ExtractPropTypes } from 'vue';
+import { ExtractPropTypes, PropType } from 'vue';
 
 const PLACEMENT = [
   'top',
@@ -20,29 +20,17 @@ export type Placement = (typeof PLACEMENT)[number];
 
 const TRIGGER = ['hover', 'focus', 'click', 'contextMenu', 'none'] as const;
 export type Trigger = (typeof TRIGGER)[number];
-
-// export type TooltipProps = {
-//   title?: string;
-//   placement?: Placement;
-//   trigger?: Trigger | Trigger[];
-//   open?: boolean;
-//   closeDelay?: number;
-//   openDelay?: number;
-//   autoAdjustOverflow?: boolean;
-//   overlayStyle?: StyleValue;
-//   overlayClassName?: string;
-//   zIndex?: number;
-//   destroyTooltipOnHide?: boolean;
-//   arrow?: boolean;
-// };
 export const Props = {
   title: {
     type: String,
-    default: ''
+    default: 'hello tooltip'
   },
   placement: {
-    type: String,
-    default: 'top'
+    type: String as () => Placement,
+    default: 'top',
+    validator: (val: Placement) => {
+      return PLACEMENT.includes(val);
+    }
   },
   trigger: {
     type: String,
@@ -51,13 +39,18 @@ export const Props = {
       return TRIGGER.includes(val);
     }
   },
+  visible: {
+    required: false,
+    default: null,
+    type: Boolean as PropType<boolean | null>
+  },
   open: {
     type: Boolean,
     default: false
   },
   closeDelay: {
     type: Number,
-    default: 0
+    default: 300
   },
   openDelay: {
     type: Number,
@@ -65,7 +58,7 @@ export const Props = {
   },
   autoAdjustOverflow: {
     type: Boolean,
-    default: true
+    default: false
   },
   overlayStyle: {
     type: Object,
@@ -88,10 +81,5 @@ export const Props = {
     default: true
   }
 };
-
-// export type TooltipEmit = {
-//   (e: 'update:open', ev: boolean): void;
-//   (e: 'openChange', ev: boolean): void;
-// };
 
 export type TooltipProps = ExtractPropTypes<typeof Props>;

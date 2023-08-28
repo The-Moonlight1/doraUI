@@ -1,9 +1,7 @@
 @use './mixins/mixins.scss' as *;
 @use './mixins/utils.scss' as *;
 @use './common/var.scss' as *;
-.yk-tooltip {
-  --tooltip-theme-bg-color: @dark;
-  --tooltip-theme-font-color: @white;
+.dora-tooltip {
   --tooltip-theme-min-width: 2em;
   --tooltip-theme-min-height: 2em;
   --tooltip-theme-max-width: 250px;
@@ -101,80 +99,80 @@
     bottom: 0;
     translate: calc(100% + $arrowSize) 0;
   }
-  //   .l() {
-  //     right: 1px;
-  //     clip-path: polygon(50% 50%, 0 100%, 0% 0);
-  //     transform: translateX(100%);
-  //   }
-  //   .t() {
-  //     bottom: 1px;
-  //     clip-path: polygon(50% 50%, 0 0%, 100% 0);
-  //     transform: translateY(100%);
-  //   }
-  //   .b() {
-  //     top: 1px;
-  //     clip-path: polygon(50% 50%, 0 100%, 100% 100%);
-  //     transform: translateY(-100%);
-  //   }
-  //   .r() {
-  //     left: 1px;
-  //     clip-path: polygon(50% 50%, 100% 100%, 100% 0);
-  //     transform: translateX(-100%);
-  //   }
-  //   &__content--left &__arrow {
-  //     .l();
-  //     top: 50%;
-  //     transform: translateX(100%) translateY(-50%);
-  //   }
-  //   &__content--leftTop &__arrow {
-  //     .l();
-  //     top: @space-m;
-  //   }
-  //   &__content--leftBottom &__arrow {
-  //     .l();
-  //     bottom: @space-m;
-  //   }
-  //   &__content--top &__arrow {
-  //     .t();
-  //     left: 50%;
-  //     transform: translateX(-50%) translateY(100%);
-  //   }
-  //   &__content--topLeft &__arrow {
-  //     .t();
-  //     left: @space-m;
-  //   }
-  //   &__content--topRight &__arrow {
-  //     .t();
-  //     right: @space-m;
-  //   }
+  @mixin l() {
+    right: 1px;
+    clip-path: polygon(50% 50%, 0 100%, 0% 0);
+    transform: translateX(100%);
+  }
+  @mixin t() {
+    bottom: 1px;
+    clip-path: polygon(50% 50%, 0 0%, 100% 0);
+    transform: translateY(100%);
+  }
+  @mixin b() {
+    top: 1px;
+    clip-path: polygon(50% 50%, 0 100%, 100% 100%);
+    transform: translateY(-100%);
+  }
+  @mixin r() {
+    left: 1px;
+    clip-path: polygon(50% 50%, 100% 100%, 100% 0);
+    transform: translateX(-100%);
+  }
+  &__content--left &__arrow {
+    @include l();
+    top: 50%;
+    transform: translateX(100%) translateY(-50%);
+  }
+  &__content--leftTop &__arrow {
+    @include l();
+    top: $space-m;
+  }
+  &__content--leftBottom &__arrow {
+    @include l();
+    bottom: $space-m;
+  }
+  &__content--top &__arrow {
+    @include t();
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+  }
+  &__content--topLeft &__arrow {
+    @include t();
+    left: $space-m;
+  }
+  &__content--topRight &__arrow {
+    @include t();
+    right: $space-m;
+  }
 
-  //   &__content--bottom &__arrow {
-  //     .b();
-  //     left: 50%;
-  //     transform: translateX(-50%) translateY(-100%);
-  //   }
-  //   &__content--bottomLeft &__arrow {
-  //     .b();
-  //     left: @space-m;
-  //   }
-  //   &__content--bottomRight &__arrow {
-  //     .b();
-  //     right: @space-m;
-  //   }
+  &__content--bottom &__arrow {
+    @include b();
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+  }
+  &__content--bottomLeft &__arrow {
+    @include b();
+    left: $space-m;
+  }
+  &__content--bottomRight &__arrow {
+    @include b();
+    right: $space-m;
+  }
 
-  //   &__content--right &__arrow {
-  //     .r();
-  //     top: 50%;
-  //     transform: translateX(-100%) translateY(-50%);
-  //   }
-  //   &__content--rightTop &__arrow {
-  //     .r();
-  //     top: @space-m;
-  //   }
-  //   &__content--rightBottom &__arrow {
-  //     .r();
-  //     bottom: @space-m;
-  //   }
+  &__content--right &__arrow {
+    @include r();
+    top: 50%;
+    transform: translateX(-100%) translateY(-50%);
+  }
+  &__content--rightTop &__arrow {
+    @include r();
+    top: $space-m;
+  }
+  &__content--rightBottom &__arrow {
+    @include r();
+    bottom: $space-m;
+  }
 }
 
 // 气泡展示隐藏动画
