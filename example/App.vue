@@ -88,6 +88,12 @@
   </DoraDropdown>
   <DoraSwitch />
   <DoraSwitch :v-model="true" />
+  <dora-space size="l">
+    <dora-avatar></dora-avatar>
+    <dora-avatar imgUrl="https://www.huohuo90.com:3003/user/6353b034dd4b583975e77fbe.png"></dora-avatar>
+    <dora-avatar :style="{ backgroundColor: '#14a9f8' }"></dora-avatar>
+    <dora-avatar icon="touxiang"></dora-avatar>
+  </dora-space>
 </template>
 
 <style lang="scss" scoped>

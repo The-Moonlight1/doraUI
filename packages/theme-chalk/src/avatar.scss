@@ -1,0 +1,58 @@
+@use './mixins/mixins.scss' as *;
+@use './mixins/utils.scss' as *;
+@use './common/var.scss' as *;
+.dora-avatar {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #fff;
+  background-color: $avatar-background-color;
+  // transition: all @animats;
+  vertical-align: top;
+  img {
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  &-text {
+    font-weight: bold;
+  }
+
+  &-group {
+    border: 2px solid $border-color-base;
+  }
+
+  .disembark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    .icon {
+      width: 50%;
+      height: 50%;
+      line-height: 0;
+    }
+  }
+}
+
+.dora-avatar-group {
+  display: flex;
+
+  &-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    border: 2px solid $border-color-base;
+    text-align: center;
+    color: #fff;
+    background-color: $avatar-background-color;
+    transition: border 0.2s;
+  }
+}
