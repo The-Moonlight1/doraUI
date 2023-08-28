@@ -86,6 +86,8 @@
       <dora-dropdown-item>Action 5</dora-dropdown-item>
     </template>
   </DoraDropdown>
+  <DoraSwitch />
+  <DoraSwitch :v-model="true" />
 </template>
 
 <style lang="scss" scoped>

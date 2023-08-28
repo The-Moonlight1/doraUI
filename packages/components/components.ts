@@ -9,3 +9,4 @@ export { DoraInput } from './input';
 export { DoraDataPicker } from './datapicker';
 export { DoraTooltip } from './tooltip';
 export { DoraDropdown, DoraDropdownItem } from './dropdown';
+export { DoraSwitch } from './switch';
