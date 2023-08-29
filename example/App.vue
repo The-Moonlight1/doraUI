@@ -1,6 +1,12 @@
 <script setup lang="ts">
   import DoraTooltip from '@dora-ui/components/tooltip';
-
+  import { DoraMessage } from '@dora-ui/components/message';
+  const open = () => {
+    DoraMessage({
+      message: '这是一条消息提示',
+      type: 'warning'
+    });
+  };
   const handlerClick = () => {
     console.log('click');
   };
@@ -106,6 +112,8 @@
   </dora-avatar-group>
   <!-- <dora-rate></dora-rate> -->
   <dora-rate allowHalf :modelValue="3.5" /><span>3.5 分</span>
+  <dora-button plain @click="open">Show message</dora-button>
+  <!-- <dora-button :plain="true" @click="openVn">VNode</dora-button> -->
 </template>
 
 <style lang="scss" scoped>

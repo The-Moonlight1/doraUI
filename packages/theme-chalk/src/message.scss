@@ -1,0 +1,68 @@
+@use './mixins/mixins.scss' as *;
+@use './mixins/utils.scss' as *;
+@use './common/var.scss' as *;
+.dora-message {
+  --dora-message-bg: $message-background-color;
+  color: var(--dora-message-color);
+  width: fit-content;
+  max-width: calc(100% - 32px);
+  box-sizing: border-box;
+  position: fixed;
+  left: 50%;
+  top: 20px;
+  transform: translate(-50%);
+  background-color: var(--dora-message-bg);
+  background-color: mix($message-background-color, #000);
+  z-index: 2000;
+  transition:
+    opacity 0.3s,
+    transform 0.3s,
+    top 0.3s;
+  // padding: $message-padding;
+  padding: 10px 20px;
+  border-radius: $border-radius-base;
+  display: flex;
+  align-items: center;
+  box-shadow:
+    0 6px 16px 0 rgb(0 0 0 / 8%),
+    0 3px 6px -4px rgb(0 0 0 / 12%),
+    0 9px 28px 8px rgb(0 0 0 / 5%);
+  pointer-events: all;
+
+  $types: (
+    'primary': $message-primary-font-color,
+    'info': $message-info-font-color,
+    'success': $message-success-font-color,
+    'warning': $message-warning-font-color,
+    'danger': $message-danger-font-color
+  );
+
+  @each $key, $value in $types {
+    &--#{$key} {
+      // --dora-message-color: $'$message-#{$value}-font-color'
+      color: $value;
+    }
+  }
+
+  &--error {
+    --dora-message-color: $message-danger-font-color;
+  }
+
+  &__content {
+    margin-left: 10px;
+  }
+
+  &__closeBtn {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
+
+.message-fade-enter-from,
+.message-fade-leave-to {
+  opacity: 0;
+  transform: translate(-50%, -100%);
+}
