@@ -1,0 +1,72 @@
+<template>
+  <dora-space align="center" :size="50" wrap>
+    <dora-avatar-group>
+      <dora-avatar
+        img-url="https://p3-passport.byteacctimg.com/img/user-avatar/bde66dd425a3657521edf67b81bd16d4~150x150.awebp"
+      ></dora-avatar>
+      <dora-avatar
+        img-url="https://p3-passport.byteacctimg.com/img/user-avatar/bde66dd425a3657521edf67b81bd16d4~150x150.awebp"
+      ></dora-avatar>
+      <dora-avatar
+        img-url="https://p3-passport.byteacctimg.com/img/user-avatar/bde66dd425a3657521edf67b81bd16d4~150x150.awebp"
+      ></dora-avatar>
+      <dora-avatar
+        img-url="https://p3-passport.byteacctimg.com/img/user-avatar/bde66dd425a3657521edf67b81bd16d4~150x150.awebp"
+      ></dora-avatar>
+      <dora-avatar
+        img-url="https://p3-passport.byteacctimg.com/img/user-avatar/bde66dd425a3657521edf67b81bd16d4~150x150.awebp"
+      ></dora-avatar>
+    </dora-avatar-group>
+    <dora-avatar-group size="m">
+      <dora-avatar
+        img-url="https://p3-passport.byteacctimg.com/img/user-avatar/bde66dd425a3657521edf67b81bd16d4~150x150.awebp"
+      ></dora-avatar>
+      <dora-avatar
+        img-url="https://p3-passport.byteacctimg.com/img/user-avatar/bde66dd425a3657521edf67b81bd16d4~150x150.awebp"
+      ></dora-avatar>
+      <dora-avatar
+        img-url="https://p3-passport.byteacctimg.com/img/user-avatar/bde66dd425a3657521edf67b81bd16d4~150x150.awebp"
+      ></dora-avatar>
+      <dora-avatar
+        img-url="https://p3-passport.byteacctimg.com/img/user-avatar/bde66dd425a3657521edf67b81bd16d4~150x150.awebp"
+      ></dora-avatar>
+      <dora-avatar
+        img-url="https://p3-passport.byteacctimg.com/img/user-avatar/bde66dd425a3657521edf67b81bd16d4~150x150.awebp"
+      ></dora-avatar>
+    </dora-avatar-group>
+    <dora-avatar-group :shape="16" :max="5">
+      <dora-avatar
+        img-url="https://p3-passport.byteacctimg.com/img/user-avatar/bde66dd425a3657521edf67b81bd16d4~150x150.awebp"
+      ></dora-avatar>
+      <dora-avatar
+        img-url="https://p3-passport.byteacctimg.com/img/user-avatar/bde66dd425a3657521edf67b81bd16d4~150x150.awebp"
+      ></dora-avatar>
+      <dora-avatar
+        img-url="https://p3-passport.byteacctimg.com/img/user-avatar/bde66dd425a3657521edf67b81bd16d4~150x150.awebp"
+      ></dora-avatar>
+      <dora-avatar
+        img-url="https://p3-passport.byteacctimg.com/img/user-avatar/bde66dd425a3657521edf67b81bd16d4~150x150.awebp"
+      ></dora-avatar>
+      <dora-avatar
+        img-url="https://p3-passport.byteacctimg.com/img/user-avatar/bde66dd425a3657521edf67b81bd16d4~150x150.awebp"
+      ></dora-avatar>
+    </dora-avatar-group>
+    <dora-avatar-group shape="square" :max="3" size="m">
+      <dora-avatar
+        img-url="https://p3-passport.byteacctimg.com/img/user-avatar/bde66dd425a3657521edf67b81bd16d4~150x150.awebp"
+      ></dora-avatar>
+      <dora-avatar
+        img-url="https://p3-passport.byteacctimg.com/img/user-avatar/bde66dd425a3657521edf67b81bd16d4~150x150.awebp"
+      ></dora-avatar>
+      <dora-avatar
+        img-url="https://p3-passport.byteacctimg.com/img/user-avatar/bde66dd425a3657521edf67b81bd16d4~150x150.awebp"
+      ></dora-avatar>
+      <dora-avatar
+        img-url="https://p3-passport.byteacctimg.com/img/user-avatar/bde66dd425a3657521edf67b81bd16d4~150x150.awebp"
+      ></dora-avatar>
+      <dora-avatar
+        img-url="https://p3-passport.byteacctimg.com/img/user-avatar/bde66dd425a3657521edf67b81bd16d4~150x150.awebp"
+      ></dora-avatar>
+    </dora-avatar-group>
+  </dora-space>
+</template>
