@@ -113,7 +113,12 @@
   <!-- <dora-rate></dora-rate> -->
   <dora-rate allowHalf :modelValue="3.5" /><span>3.5 分</span>
   <dora-button plain @click="open">Show message</dora-button>
-  <!-- <dora-button :plain="true" @click="openVn">VNode</dora-button> -->
+  <dora-space direction="vertical">
+    <dora-progress></dora-progress>
+    <dora-progress :show-text="false"></dora-progress>
+    <dora-progress :percent="50" :stroke-color="'red'"></dora-progress>
+    <dora-progress :percent="90" :stroke-color="'#000'"></dora-progress>
+  </dora-space>
 </template>
 
 <style lang="scss" scoped>
