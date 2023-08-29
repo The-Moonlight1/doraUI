@@ -104,6 +104,8 @@
     <dora-avatar :style="{ backgroundColor: '#14a9f8' }"></dora-avatar>
     <dora-avatar :style="{ backgroundColor: '#1FB4A2' }" icon="geren"></dora-avatar>
   </dora-avatar-group>
+  <!-- <dora-rate></dora-rate> -->
+  <dora-rate allowHalf :modelValue="3.5" /><span>3.5 分</span>
 </template>
 
 <style lang="scss" scoped>

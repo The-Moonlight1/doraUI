@@ -1,0 +1,108 @@
+@use './mixins/mixins.scss' as *;
+@use './mixins/utils.scss' as *;
+@use './common/var.scss' as *;
+$sizes: (
+  s: 14px,
+  m: 18px,
+  l: 22px,
+  xl: 26px
+);
+
+@each $key, $value in $sizes {
+  .dora-rate-item #dora-rate-icon-#{$key} {
+    width: $value;
+    height: $value;
+  }
+}
+.dora-rate {
+  display: inline-flex;
+  &--s {
+    column-gap: $space-s;
+  }
+  &--m {
+    column-gap: 6px;
+  }
+  &--l {
+    column-gap: $space-m;
+  }
+  &--xl {
+    column-gap: 10px;
+  }
+}
+
+.dora-rate-item {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &--animation {
+    animation-name: rateScale;
+    animation-duration: 0.34s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  .dora-rate-icon {
+    color: $rate-icon-color;
+  }
+
+  .dora-rate-icon--select {
+    color: $color-warning;
+  }
+}
+
+.dora-rate-half {
+  position: absolute;
+  z-index: 10;
+  overflow: hidden;
+  width: 50%;
+  opacity: 0;
+
+  &--select {
+    opacity: 1;
+  }
+
+  &-icon {
+    color: $color-warning;
+  }
+}
+
+.dora-rate.dora-rate--disabled,
+.dora-rate.dora-rate--readonly {
+  .dora-rate-item {
+    transform: none;
+  }
+  .dora-rate-icon {
+    transition: none;
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
+.dora-rate.dora-rate--readonly {
+  .dora-rate-icon {
+    cursor: default;
+  }
+}
+
+.dora-rate.dora-rate--disabled {
+  .dora-rate-icon {
+    cursor: not-allowed;
+  }
+}
+
+@keyframes rateScale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

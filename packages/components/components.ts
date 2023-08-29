@@ -11,3 +11,4 @@ export { DoraTooltip } from './tooltip';
 export { DoraDropdown, DoraDropdownItem } from './dropdown';
 export { DoraSwitch } from './switch';
 export { DoraAvatar, DoraAvatarGroup } from './avatar';
+export { DoraRate } from './rate';
