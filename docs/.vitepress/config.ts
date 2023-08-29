@@ -13,6 +13,7 @@ const sidebar = [
       { text: 'Button 按钮', link: '/components/button/' },
       { text: 'Icon 图标', link: '/components/icon/' },
       { text: 'Link 链接', link: '/components/link/' }
+      // { text: ''}
     ]
   },
   {
@@ -29,15 +30,19 @@ const sidebar = [
     items: [
       { text: 'Input 输入框', link: '/components/input/' },
       { text: 'DataPicker 日期选择器', link: '/components/datapicker/' },
-      { text: 'Switch 开关', link: '/components/switch/' }
+      { text: 'Switch 开关', link: '/components/switch/' },
+      { text: 'Rate 评分', link: '/components/rate/' }
     ]
   },
   {
     text: '数据展示',
     items: [
+      { text: 'Avatar 头像', link: '/components/avatar/' },
       { text: 'Table 表格', link: '/components/table/' },
       { text: 'Dropdown 下拉菜单', link: '/components/dropdown/' },
-      { text: 'Tooltip 文字提示', link: '/components/tooltip/' }
+      { text: 'Tooltip 文字提示', link: '/components/tooltip/' },
+      { text: 'Progress 进度条', link: '/components/progress/' },
+      { text: 'Message 全局提示', link: '/components/message/' }
     ]
   }
 ];
