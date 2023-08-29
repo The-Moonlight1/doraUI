@@ -9,6 +9,7 @@
   height: $input-height;
   line-height: $input-height;
   box-sizing: border-box;
+  padding-left: 15px;
   // max-width: $input-max-width;
   &__wrapper {
     box-sizing: border-box;
@@ -39,17 +40,22 @@
     border-color: $input-disabled-border;
     background-color: #f5f7fa;
   }
-  &__suffix,
   &__prefix {
     display: flex;
     align-items: center;
     cursor: pointer;
-    padding: 0 11px;
+    padding-left: 11px;
     font-size: 20px;
   }
-
-  &__prefix {
-    padding-left: 0;
+  &__suffix {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
     padding-right: 11px;
+    font-size: 20px;
   }
+  // &__prefix {
+  //   padding-left: 0;
+  //   padding-right: 11px;
+  // }
 }
