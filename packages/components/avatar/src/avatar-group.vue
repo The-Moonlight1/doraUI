@@ -1,8 +1,8 @@
 <template>
-  <div ref="$avatarGroup" class="yk-avatar-group">
+  <div ref="$avatarGroup" class="dora-avatar-group">
     <slot></slot>
     <div
-      class="yk-avatar-group-more"
+      class="dora-avatar-group-more"
       :style="{
         width: size,
         height: size,

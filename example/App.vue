@@ -88,12 +88,22 @@
   </DoraDropdown>
   <DoraSwitch />
   <DoraSwitch :v-model="true" />
-  <dora-space size="l">
+  <dora-space size="larger">
     <dora-avatar></dora-avatar>
-    <dora-avatar imgUrl="https://www.huohuo90.com:3003/user/6353b034dd4b583975e77fbe.png"></dora-avatar>
+    <dora-avatar
+      imgUrl="https://p3-passport.byteacctimg.com/img/user-avatar/bde66dd425a3657521edf67b81bd16d4~150x150.awebp"
+    ></dora-avatar>
     <dora-avatar :style="{ backgroundColor: '#14a9f8' }"></dora-avatar>
-    <dora-avatar icon="touxiang"></dora-avatar>
+    <dora-avatar icon="geren"></dora-avatar>
   </dora-space>
+  <dora-avatar-group :size="48">
+    <dora-avatar></dora-avatar>
+    <dora-avatar
+      imgUrl="https://p3-passport.byteacctimg.com/img/user-avatar/bde66dd425a3657521edf67b81bd16d4~150x150.awebp"
+    ></dora-avatar>
+    <dora-avatar :style="{ backgroundColor: '#14a9f8' }"></dora-avatar>
+    <dora-avatar :style="{ backgroundColor: '#1FB4A2' }" icon="geren"></dora-avatar>
+  </dora-avatar-group>
 </template>
 
 <style lang="scss" scoped>

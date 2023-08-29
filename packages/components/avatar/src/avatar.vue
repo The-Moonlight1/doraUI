@@ -4,6 +4,7 @@
     <span v-else ref="$text" class="dora-avatar-text">
       <slot />
     </span>
+    <dora-icon v-show="icon" :name="icon"></dora-icon>
   </div>
 </template>
 <script setup lang="ts">
@@ -15,6 +16,7 @@
     shape?: 'circle' | 'square' | number;
     size?: number | Size;
     imgUrl?: string;
+    icon?: string;
   };
   const props = withDefaults(defineProps<AvatarProps>(), {
     shape: 'circle',
