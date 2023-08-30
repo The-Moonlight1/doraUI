@@ -18,3 +18,14 @@
 ## 垂直分割线
 
 <preview path="./withText.vue"></preview>
+
+## Divider API
+
+### Divider Attributres
+
+| 属性名      | 描述       | 类型                                   | 默认值     |
+| ----------- | ---------- | -------------------------------------- | ---------- |
+| type        | 类型       | `solid / dashed / dotted`              | solid      |
+| fontAlign   | 文字位置   | `left / right / center`                | center     |
+| orientation | 分割线方向 | `horizontal / vertical`                | horizontal |
+| fontType    | 文字类型   | `primary / success / warning / danger` | primary    |
