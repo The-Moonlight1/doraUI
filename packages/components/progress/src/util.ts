@@ -1,4 +1,4 @@
-import type { Status } from './progress';
+type Status = 'normal' | 'success' | 'error';
 const SIZES = ['s', 'm', 'l', 'xl'] as const;
 type Size = (typeof SIZES)[number];
 
@@ -20,8 +20,10 @@ export const getIconColor = (status: Status) => statusColor[status] || statusCol
 export const getIconName: (status: Status, isLinear?: boolean) => string = (status: Status, isLinear?: boolean) =>
   ({
     normal: '',
-    success: isLinear ? 'IconTickOutline' : 'IconTickFill',
-    error: isLinear ? 'IconCloseOutline' : 'IconCrossFill'
+    // success: isLinear ? 'IconTickOutline' : 'IconTickFill',
+    // error: isLinear ? 'IconCloseOutline' : 'IconCrossFill'
+    success: isLinear ? 'tick' : 'tick',
+    error: isLinear ? 'Cross' : 'Cross'
   })[status];
 
 /**

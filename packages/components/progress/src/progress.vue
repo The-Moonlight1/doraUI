@@ -17,7 +17,8 @@
               class="dora-progress-icon"
               :style="{ color: getIconColor(props.status) }"
             >
-              <component :is="getIconName(props.status)"></component>
+              <!-- <component :is="getIconName(props.status)"></component> -->
+              <dora-icon :name="getIconName(props.status, true)"></dora-icon>
             </div>
           </slot>
         </div>
@@ -54,7 +55,8 @@
               class="dora-progress-circle-icon"
               :style="{ color: getIconColor(props.status) }"
             >
-              <component :is="getIconName(props.status, true)"></component>
+              <!-- <component :is="getIconName(props.status, true)"></component> -->
+              <dora-icon :name="getIconName(props.status, true)"></dora-icon>
             </div>
             <div v-else>{{ progressPercent }}</div>
           </slot>
