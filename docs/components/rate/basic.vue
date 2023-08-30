@@ -1,0 +1,3 @@
+<template>
+  <dora-rate />
+</template>
