@@ -34,18 +34,13 @@
     'info': $message-info-font-color,
     'success': $message-success-font-color,
     'warning': $message-warning-font-color,
-    'danger': $message-danger-font-color
+    'error': $message-danger-font-color
   );
 
   @each $key, $value in $types {
     &--#{$key} {
-      // --dora-message-color: $'$message-#{$value}-font-color'
       color: $value;
     }
-  }
-
-  &--error {
-    --dora-message-color: $message-danger-font-color;
   }
 
   &__content {
