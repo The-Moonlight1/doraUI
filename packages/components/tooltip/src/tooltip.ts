@@ -2,7 +2,20 @@
 
 import { ExtractPropTypes, PropType } from 'vue';
 
-const PLACEMENT = ['top', 'left', 'right', 'bottom', 'leftTop', 'leftBottom', 'rightTop', 'rightBottom'] as const;
+const PLACEMENT = [
+  'top',
+  'left',
+  'right',
+  'bottom',
+  'leftTop',
+  'topLeft',
+  'topRight',
+  'bottomLeft',
+  'bottomRight',
+  'leftBottom',
+  'rightTop',
+  'rightBottom'
+] as const;
 export type Placement = (typeof PLACEMENT)[number];
 
 const TRIGGER = ['hover', 'click', 'contextMenu'] as const;

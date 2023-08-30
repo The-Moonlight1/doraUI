@@ -6,48 +6,6 @@
   .dora-tooltip {
     --tooltip-theme-bg-color: $bg-color-l;
     --tooltip-theme-font-color: $font-color-l;
-    &__content--left {
-      top: 50%;
-      left: 0;
-      translate: -100% -50%;
-    }
-    &__content--leftTop {
-      top: 0;
-      left: 0;
-      translate: 0 -100%;
-    }
-    &__content--leftBottom {
-      bottom: 0;
-      left: 0;
-      translate: 0 100%;
-    }
-    &__content--top {
-      top: 0;
-      left: 50%;
-      translate: -50% -100%;
-    }
-    &__content--bottom {
-      bottom: 0;
-      left: 50%;
-      translate: -50% 100%;
-    }
-
-    &__content--right {
-      top: 50%;
-      right: 0;
-      translate: 100% -50%;
-    }
-
-    &__content--rightTop {
-      top: 0;
-      right: 0;
-      translate: 0 -100%;
-    }
-    &__content--rightBottom {
-      right: 0;
-      bottom: 0;
-      translate: 0 100%;
-    }
   }
   .dora-tooltip__content {
     padding: $space-s;
@@ -56,8 +14,6 @@
     min-height: auto;
     max-height: none;
     border-radius: $border-radius-base;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-color: #fff;
   }
 }
 
