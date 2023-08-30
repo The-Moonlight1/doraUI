@@ -72,3 +72,6 @@ mark {
 button {
   background-color: #f6f6f7;
 }
+.vitepress-demo-preview__element-plus__container {
+  overflow: unset;
+}

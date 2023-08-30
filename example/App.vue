@@ -83,14 +83,15 @@
     <span>测试</span>
     <template #content> 我是测试tooltip </template>
   </DoraTooltip>
-  <DoraDropdown placement="right" title="test">
-    <template #content>
-      <dora-dropdown-item>Action 1</dora-dropdown-item>
-      <dora-dropdown-item>Action 2</dora-dropdown-item>
-      <dora-dropdown-item>Action 3</dora-dropdown-item>
-      <dora-dropdown-item>Action 4</dora-dropdown-item>
-      <dora-dropdown-item>Action 5</dora-dropdown-item>
+  <DoraDropdown placement="right">
+    <template #title>
+      <dora-button>按钮1</dora-button>
     </template>
+    <dora-dropdown-item>Action 1</dora-dropdown-item>
+    <dora-dropdown-item>Action 2</dora-dropdown-item>
+    <dora-dropdown-item>Action 3</dora-dropdown-item>
+    <dora-dropdown-item>Action 4</dora-dropdown-item>
+    <dora-dropdown-item>Action 5</dora-dropdown-item>
   </DoraDropdown>
   <DoraSwitch />
   <DoraSwitch :v-model="true" />

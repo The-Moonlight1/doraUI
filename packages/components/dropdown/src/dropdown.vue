@@ -12,15 +12,17 @@
       @open-change="handleOpenChange"
     >
       <div :class="bem('title')">
-        <DoraButton v-if="title" :size="size || 'default'" :type="type || 'default'">
+        <DoraButton v-if="title" :size="size" :type="type">
           {{ title }}
           <dora-icon name="down-outline" />
         </DoraButton>
-        <slot v-else></slot>
+        <slot v-else name="title"></slot>
+        <!-- <slot name="title"></slot> -->
       </div>
 
       <template #content>
-        <slot name="content"></slot>
+        <!-- <slot name="content"></slot> -->
+        <slot></slot>
       </template>
     </Tooltip>
   </div>

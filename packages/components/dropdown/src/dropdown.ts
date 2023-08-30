@@ -41,7 +41,7 @@ export const DropdownProps = {
   },
   size: {
     type: String as PropType<Size>,
-    default: 'm'
+    default: 'default'
   },
   overlayStyle: {
     type: Object,
