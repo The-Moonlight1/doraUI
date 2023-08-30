@@ -20,7 +20,7 @@ export const DropdownProps = {
     type: String,
     default: 'hover',
     validator: (val: Trigger) => {
-      return (['hover', 'focus', 'click', 'contextMenu', 'none'] as const).includes(val);
+      return (['hover', 'click', 'contextMenu'] as const).includes(val);
     }
   },
   closeDelay: {
