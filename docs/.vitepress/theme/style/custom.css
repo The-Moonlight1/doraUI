@@ -68,3 +68,7 @@ mark {
 .vp-doc a:hover {
   text-decoration: none;
 }
+
+button {
+  background-color: #f6f6f7;
+}
