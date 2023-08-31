@@ -1,5 +1,14 @@
 {
   "name": "dora-ui",
+  "version": "1.0.0",
+  "description": "A Vue.js 3.0 UI Toolkit for Web",
+  "keywords": [
+    "dora",
+    "component library",
+    "vue",
+    "ui"
+  ],
+  "homepage": "https://github.com/The-Moonlight1/doraUI",
   "private": true,
   "scripts": {
     "dev": "pnpm -C example dev",
