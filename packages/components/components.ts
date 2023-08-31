@@ -12,5 +12,5 @@ export { DoraDropdown, DoraDropdownItem } from './dropdown';
 export { DoraSwitch } from './switch';
 export { DoraAvatar, DoraAvatarGroup } from './avatar';
 export { DoraRate } from './rate';
-export { DoraMessage } from './message';
+// export { DoraMessage } from './message';
 export { DoraProgress } from './progress';
